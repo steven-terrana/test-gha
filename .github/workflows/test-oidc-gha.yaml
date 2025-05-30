@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test-oidc:
+    name: Test oidc token
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
